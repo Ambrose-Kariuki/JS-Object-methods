@@ -2,26 +2,20 @@
 <html>
 <body>
 <h1>JavaScript Objects</h1>
-<h2>Adding a Method</h2>
+<h2>Displaying Properties</h2>
 
 <p id="demo"></p>
 
 <script>
 // Create an Object
 const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
+  name: "John",
+  age: 30,
+  city: "New York"
 };
 
-// Add a Method
-person.name = function() {
-  return this.firstName + " " + this.lastName;
-};
-
-// Display Object Data
-document.getElementById("demo").innerHTML =
-"My father is " + person.name(); 
+// Display Properties
+document.getElementById("demo").innerHTML = person.name + ", " + person.age + ", " + person.city;
 </script>
 
 </body>
